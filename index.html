@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Decodificardor de Texto</title>
+</head>
+
+<body>
+    <header></header>
+    <main class="container">
+        <div class="logo">
+            <img class="logo_alura" src="./assets/alura.png" alt="logo alura">
+        </div>
+        <section class="container__page ">            
+            <textarea class="container__page_input" id="textoDigitado">Digite seu texto</textarea>
+            <div class="container__page_aviso">
+                <p><img src="./assets/bi_exclamation-circle-fill.png" alt="aviso">
+                    Apenas letras minúsculas e sem acento
+                </p>
+            </div>
+            <div class="container__page_botao">
+                <button class="container_botao" onclick="pegarTexto()"  id="criptografar">Criptografar</button>
+                <button class="container_botao" onclick="descriptografarTexto()"  id="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="container__card">
+            <img src="./assets/High quality products 1 1.svg" alt="procurando" id="procurando">
+            <h1 class="container__card_texto" id="card_texto">Nenhuma mensagem encontrada</h1>
+            <textarea class="container__card_inserir_texto" id="textoDescriptografado">Digite um texto que você deseja criptografar ou Descriptografar</textarea>
+            <button type="button" class="container__card_botao" onclick="copiarTexto()" id="copiar">Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Fabiano Lima</p>
+        <a class="rodape__redes"href="https://www.linkedin.com/in/fabiano-lima-1792173b/">
+            <img class="rodape__imagem" src="./assets/logo_linkedin.png" alt="logo linkedin">
+            Linkedin
+        </a>
+        <a class="rodape__redes" href="https://github.com/Fabis-li">
+            <img class="rodape__imagem" src="./assets/logo_github.png" alt="logo github">
+            Github
+        </a>
+    </footer>
+    <script src="index.js" defer></script>
+</body>
+
+</html>
